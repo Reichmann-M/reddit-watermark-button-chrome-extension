@@ -1,0 +1,13 @@
+{
+    "name": "Reddit Watermark Button",
+    "version": "0.0",
+    "description": "Adds a button under image posts on reddit which adds a watermark containing the current subreddit",
+    "permissions": ["tabs", "*://*.reddit.com/*","storage", "activeTab"],
+    "content_scripts": [
+        {
+          "matches": ["*://*.reddit.com/*/comments/*"],
+          "js": ["watermark.js"]
+        }
+    ],
+    "manifest_version": 2
+}
