@@ -6,7 +6,11 @@
     "content_scripts": [
         {
           "matches": ["*://*.reddit.com/*/comments/*"],
-          "js": ["watermark.js"]
+          "js": ["watermark.js"],
+          "css": [
+              "style.css"
+          ],
+          "run_at": "document_end"
         }
     ],
     "manifest_version": 2
